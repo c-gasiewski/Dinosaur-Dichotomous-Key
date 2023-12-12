@@ -1,4 +1,5 @@
 # Dinosaur-Dichotomous-Key
+Group Members: Christopher Gasiewski (junior), Ryan Kempner(junior), and Maya Manders(junior)
 
 Video Link for Project: https://tuprd-my.sharepoint.com/:v:/g/personal/tuo49215_temple_edu/EbiXf8evRXVOvuE2Hkon0l4BsuzKS63HmyGmuMY11WyGmg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=d78otV
 
