@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -46,10 +46,13 @@ image parasaurolophus = "Parasaurolophus.jpg"
 image hypsolophodon = "Hypsolophodon.jpg" 
 image iguanodon = "Iguanodon.jpg"
 image ankylosaurus = "Iguanodon.jpg"
-image stegasaurus = "Stegasaurus.jpg"
+image stegosaurus = "Stegosaurus.jpg"
 image pterodactyl = "Pterodactyl.jpg"
 image pteranodon = "Pteranodon.jpg"
 image quetzalcoatlus = "Quetzalcoatlus.jpg"
+image spinosaurus = "Suetzalcoatlus.jpg"
+image plesiosaur = "Puetzalcoatlus.jpg"
+image baryonyx = "Baryonyx.jpg"
 
 
 # The game starts here.
@@ -188,12 +191,12 @@ label armored:
             jump choice1_done # figure out  
 
 label horns_and_frills:
-    e "Does your dinosaur have horns and/or boney frills?"
+    e "Does your dinosaur have horns and/or bony frills?"
 
     menu:
-        "Yes! My dinosaur has horns and/or boney frills.":
+        "Yes! My dinosaur has horns and/or bony frills.":
             jump ceratopsian   
-        "The Dinosaur I'm thinking of does not have horns and/or boney frills.":
+        "The Dinosaur I'm thinking of does not have horns and/or bony frills.":
             jump bipedal
 
 label bipedal:
@@ -212,15 +215,18 @@ label pterosaur:
     menu:
         "Pteradactyl":
             show pterodactyl at truecenter:
-            l "fact"
+            l "The Pterodactyl is considered the largest flying animal that ever lived at over 36 feet."
+            l "This species went extinct in the late Cretaceous time period."
             jump choice1_done
         "Pteranodon":
             show pteranodon at truecenter:
-            l "fact"
+            l "The Pteranodon lived in big flocks"
+            l "This species went extinct in the Late Cretaceous"
             jump choice1_done
         "Quetzalcoatlus":
             show quetzalcoatlus at truecenter:
-            l "fact"
+            l "The Quetzalcoatlus could fly down and scoop up small dinosaurs, just like pelicans do with fish."
+            l "This species went extinct in the Late Cretaceous"
             jump choice1_done
 
 label netheropod:
@@ -229,15 +235,18 @@ label netheropod:
     menu:
         "Ceratosaurus":
             show ceratosaurus at truecenter:
-            f "fact"
+            f "The Deratosaurus is the only known dinosaur from the triceratops family to eat fish."
+            f "This species went extinct in the Late Jurassic."
             jump choice1_done
         "Carnotaurus":
             show carnotaurus at truecenter:
-            f "fact"
+            f "The Carnotaurus is the only species in the Theropoda group to have horns above their eyes."
+            f " This species went extinct in the Late Cretaceous."
             jump choice1_done
         "Dilophosaurus":
             show dilophosaurus at truecenter:
-            f "fact"
+            f "In Jurassic Park, the Dilophosaurus is depicted as having an expandable frill and spitting poison. However, none of that is true, causing it to be the most misunderstood dinosaur that ever lived."
+            f "This species went extinct in the Early Jurassic."
             jump choice1_done
 
 
@@ -247,15 +256,17 @@ label tentanurae:
     menu:
         "Megalosaurus":
             show megalosaurus at truecenter:
-            m "fact"
+            m "The Megalosaurus could replace broken or missing teeth."
+            m "This species went extinct in the Middle Jurassic."
             jump choice1_done
         "Gigantosaurus":
             show gigantosaurus at truecenter:
-            m "fact"
+            m "The Gigantosaurus's brains had the approximate shape and weight of a banana"
+            m "This species went extinct in the Late Cretaceous."
             jump choice1_done
         "Allosaurus":
             show allosaurus at truecenter:
-            m "fact"
+            m "The Allosaurus " #incomplete 
             jump choice1_done
 
 label maniraptora:
@@ -264,15 +275,18 @@ label maniraptora:
     menu:
         "Velociraptor":
             show velociraptor at truecenter:
-            g "fact"
+            g "The Velociraptor had feathers and was the size of a wolf."
+            g "This species went extinct in the Late Cretaceous."
             jump choice1_done
         "Microraptor":
             show microraptor at truecenter:
-            g "fact"
+            g "The Microraptor used its wings for gliding, not flying."
+            g "This species went extinct in the Early Cretaceous"
             jump choice1_done
         "Therizinosaurus":
             show therizinosaurus at truecenter:
-            g "fact"
+            g "The Therizinosaurus's claws were over 3 feet long."
+            g "This species went extinct in the Late Cretaceous."
             jump choice1_done
             
 label ornithomimidae:
@@ -281,15 +295,18 @@ label ornithomimidae:
     menu:
         "Gallimimus":
             show gallimimus at truecenter:
-            h "fact"
+            h "The Gallimimus had a brain the size of a golf ball despite being 3 times taller than an average human."
+            h "This species went extinct in the Late Cretaceous."
             jump choice1_done
         "Ornithomimus":
             show ornithomimus at truecenter:
-            h "fact"
+            h "The Ornithomimus could run up to 50 miles per hour."
+            h "This species went extinct in the Late Cretaceous."
             jump choice1_done
         "Pachycephalosaurus":
             show pachycephalosaurus at truecenter:
-            h "fact"
+            h "The diameter of a Pachycephalosaurus' domed head could measure up to 2 feet."
+            h "This species went extinct in the Late Cretaceous"
             jump choice1_done
 
 label tyrannosauridae:
@@ -298,15 +315,18 @@ label tyrannosauridae:
     menu:
         "Eotyrannus":
             show eotyrannus at truecenter:
-            n"fact"
+            n "The Eotyrannus is known as the 'early tyrant' and the early relative to the T-Rex."
+            n "This species went extinct in the Early Cretaceous."
             jump choice1_done
         "Tyrannosaurus":
             show tyrannosaurus at truecenter:
-            n"fact"
+            n"The Tyrannosaurus could eat up to 500 pounds in one bite."
+            n "This species went extinct in the Upper Cretaceous."
             jump choice1_done
         "Tarbosaurus":
             show tarbosaurus at truecenter:
-            n"fact"
+            n"The Tarbosaurus has the smallest arms of any dinosaur relative to their body size."
+            n "This species went extinct in the Late Cretaceous."
             jump choice1_done
 
 label sauropods:
@@ -315,19 +335,23 @@ label sauropods:
     menu:
         "Diplodocus":
             show diplodocus at truecenter:
-            i "fact"
+            i "The Diplodocus's front legs were shorter than their hind legs."
+            i "This species went extinct in the Upper Jurassic."
             jump choice1_done
         "Brontosaurus":
             show brontosaurus at truecenter:
-            i "fact"
+            i "The Brontosaurus could live up to 100 years."
+            i "This species went extinct in the Late Jurassic."
             jump choice1_done
         "Brachiosaurus":
             show brachiosaurus at truecenter:
-            i "fact"
+            i "The Brachiosaurus ate about 440 pounds per day."
+            i "This species went extinct in the Late Jurassic."
             jump choice1_done
         "Titanosaurus":
             show titanosaurus at truecenter:
-            i "fact"
+            i "The Titanosaurus could weigh up to 76 tons."
+            i "This species went extinct in the Upper Cretaceous."
             jump choice1_done
 
 label ceratopsian:
@@ -336,15 +360,18 @@ label ceratopsian:
     menu:
         "Triceratops":
             show triceratops at truecenter:
-            j "fact"
+            j "The triceratops' horns changed as it grew."
+            j "This species went extinct in the Upper Cretaceous."
             jump choice1_done
         "Protoceratops":
             show protoceratops at truecenter:
-            j "fact"
+            j "The Protoceratops had four legs, but could walk on 2."
+            j "This species went extinct in the Late Cretaceous."
             jump choice1_done
         "Stryacosaurus":
             show styracosaurus at truecenter:
-            j "fact"
+            j "The Stryacosaurus could have anywhere from 4-6 horns."
+            j "This species went extinct in the Late Cretaceous."
             jump choice1_done
 
 label ornithopods:
@@ -353,15 +380,18 @@ label ornithopods:
     menu:
         "Parasaurolophus":
             show parasaurolophus at truecenter:
-            o "fact"
+            o "The Parasaurolophus's crest on its head allowed it to make loud trumpeting calls."
+            o "This species went extinct in the Late Cretaceous."
             jump choice1_done
         "Hypsolophodon":
             show hypsolophodon at truecenter:
-            o "fact"
+            o "The Hypsolophodon liked to chew its food and developed cheekbones."
+            o "This species went extinct in the Early Cretaceous."
             jump choice1_done
         "Iguanodon":
             show iguanodon at truecenter:
-            o "fact"
+            o "The Iguanodon had five fingers, but instead of thumbs they had a few fingers."
+            o "This species went extinct in the Early Cretaceous."
             jump choice1_done
 
 label thyreophora:
@@ -370,11 +400,13 @@ label thyreophora:
     menu:
         "Ankylosaurus":
             show triceratops at truecenter:
-            k "fact"
+            k "The Ankylosaurus's spikes on its head/body were strong enough to break teeth."
+            k "This species went extinct in the Late Cretaceous."
             jump choice1_done
-        "Stegasaurus":
-            show stegasaurus at truecenter:
-            k "fact"
+        "Stegosaurus":
+            show stegosaurus at truecenter:
+            k "The Stegosaurus is the state dinosaur of Colorado"
+            k "This species went extinct in the Late Jurassic"
             jump choice1_done
 
 label swimmers:
@@ -383,11 +415,18 @@ label swimmers:
     menu:
         "Spinosaurus":
             show spinosaurus at truecenter:
-            k "fact"
+            k "The Spinosaurus was the biggest predator to ever walk the earth with a length of up to 60 feet."
+            k "This species went extinct in the Late Cretaceous."
             jump choice1_done
         "Plesiosaur":
             show plesiosaur at truecenter:
-            k "fact"
+            k "The Plesiosaur had possibly the strongest bite force of any animal at 33000 psi."
+            k "This species went extinct in the Late Cretaceous"
+            jump choice1_done
+        "Baryonyx":
+            show baryonyx at truecenter:
+            k "The Baryonyx's jaw is designed to keep prey from wiggling free."
+            k "This species went extinct in the Early Cretaceous."
             jump choice1_done
     
 
